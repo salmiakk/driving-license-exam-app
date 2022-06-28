@@ -10,6 +10,7 @@ import ExamPage from './components/ExamPage.js'
 import LearnPage from './components/LearnPage.js'
 import EditPage from './components/EditPage.js'
 import Container from '@mui/material/Container';
+import Questions from './data/Questions.json'
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -17,6 +18,8 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 function App() {
+  localStorage.setItem('questions', JSON.stringify(Questions));
+
   return (
     <Router>
       <Container maxWidth="100%" style={{ padding: 0}}>
