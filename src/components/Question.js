@@ -3,8 +3,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/Card';
 import CardActions from '@mui/material/Card';
 import CardMedia from '@mui/material/Card';
-import { NavLink } from "react-router-dom";
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Answers from './Answers.js'
 

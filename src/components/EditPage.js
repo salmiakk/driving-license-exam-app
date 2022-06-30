@@ -2,7 +2,6 @@ import {React, useState, useEffect, useCallback, useContext } from "react";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { DataGrid, GridRowModes, GridActionsCellItem } from '@mui/x-data-grid';
-import { questions } from '../App.js'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/DeleteOutlined';
 import SaveIcon from '@mui/icons-material/Save';
