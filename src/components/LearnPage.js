@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext }  from "react";
+import { useNavigate } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Question from './Question.js'
 import Button from '@mui/material/Button';
@@ -13,10 +14,15 @@ import '../helpers/array.js'
 
 export function LearnPage(props) {
   
+  let navigate = useNavigate();
+  const navigateBackHome = () =>{ 
+    let path = `/`; 
+    navigate(path);
+  }
   const [answerGiven, setAnswerGiven] = useState(false);
   const [correctAnswerCount, setCorrectAnswerCount] = useState(0);
   const [wrongAnswerCount, setWrongAnswerCount] = useState(0);
-  const [alertOpen, setAlertOpen] = React.useState(false);
+  const [alertOpen, setAlertOpen] = useState(false);
   const questions = useContext(QuestionContext).questions;
 
   let [currentQuestion, setCurrentQuestion] = useState(questions.random());
@@ -32,6 +38,7 @@ export function LearnPage(props) {
 
   const handleClickCloseAlert = () => {
     setAlertOpen(false);
+    navigateBackHome();
   };
 
   return (
@@ -51,6 +58,7 @@ export function LearnPage(props) {
         answerThree={currentQuestion.answerThree} 
         correctAnswer={currentQuestion.correctAnswer}
         onAnswerGiven={handleAnswerGiven}
+        workingMode='L'
       />
       <Button  sx={{ m:0.5 }} size="large" onClick={()=>(
         setAnswerGiven(false),

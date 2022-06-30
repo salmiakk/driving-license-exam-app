@@ -25,8 +25,11 @@ export function Answers(props) {
             setWrongAnswerCount(wrongAnswerCount+1);
         }
         setButtonColors(() => {
-            let newState = ["error", "error", "error"];
-            newState[props.correctAnswer] = "success";
+            let newState = [];
+            if(props.workingMode == 'L'){
+                newState = ["error", "error", "error"];
+                newState[props.correctAnswer-1] = "success";
+            }
             return newState;
         });
     };

@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 
 export function Header() {
   return (
-  <Box sx={{  }} >
+  <Box>
     <Typography variant="h3" component="div" align="center" mb={2} sx={{ flexGrow: 1 }}>
       Egzamin na prawo jazdy
     </Typography>

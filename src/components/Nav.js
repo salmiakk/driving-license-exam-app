@@ -23,6 +23,9 @@ export function Nav() {
             <Link color="inherit" underline="none" variant="h6" sx={{ flexGrow: 1 }}>
               <NavLink style={{ color: 'inherit', textDecoration: 'inherit' }} to="/edit">Tryb edycji</NavLink>
             </Link>
+            <Link color="inherit" underline="none" variant="h6" sx={{ flexGrow: 1 }}>
+              <NavLink style={{ color: 'inherit', textDecoration: 'inherit' }} to="/users">Podgląd użytkowników</NavLink>
+            </Link>
         </Toolbar>
       </AppBar>
     </Box>

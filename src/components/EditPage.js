@@ -145,10 +145,11 @@ export function EditPage(props) {
   );
 
   return (
-    <Box sx={{ height: '80vh' }}>
+    <Box sx={{ height: '110vh' }}>
       <Typography align="center" variant="h6" component="div">
         W tym trybie możesz edytować pytania egzaminacyjne. Aby edytować konkretne pytanie, wybierz je z listy i kliknij przycisk "edytuj" po prawej stronie. <br/>
-        Następnie wybierz pole którego wartość chcesz zmienić, wprowadź nową zawartość i kliknij przycisk "zapisz" po prawej.
+        Następnie wybierz pole którego wartość chcesz zmienić, wprowadź nową zawartość i kliknij przycisk "zapisz" po prawej.<br/>
+        Nowo dodane pytania będą widoczne na ostatniej stronie listy.
       </Typography>
       <DataGrid
         experimentalFeatures={{ newEditingApi: true }}

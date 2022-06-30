@@ -3,7 +3,7 @@
         "id":1,
         "type": "MultipleAnswer",
         "content": "W jakich godzinach na obszarze zabudowanym obowiązuje dopuszczalna prędkość 60 km/h?",
-        "imgSrc": "https://mui.com/static/images/cards/contemplative-reptile.jpg",
+        "imgSrc": "https://www.autocentrum.pl/ac-file/article/5f44a43dddfa107b2d2d8f17/obszar-zabudowany-gdzie-sie-konczy-gdzie-zaczyna-i-jaka-predkosc-obowiazuje.jpg",
         "answerOne": "Od 5:00 do 9:00",
         "answerTwo": "Tylko o 11:35 w soboty",
         "answerThree": "Od 23:00 do 6:00",
@@ -59,5 +59,105 @@
         "answerTwo": "Tak, ale tylko na tylnim siedzeniu.",
         "answerThree": "Tak, ale pod warunkiem, że ta osoba korzysta z pasów bezpieczeństwa",
         "correctAnswer": 1
+    },
+    {
+        "id":8,
+        "type": "YesOrNo",
+        "content": "Czy jako uczestnik wypadku drogowego, w którym są ranni, masz obowiązek wezwać służby ratunkowe oraz udzielić niezbędnej pomocy poszkodowanym?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/1C107.jpg",
+        "correctAnswer": 1
+    },
+    {
+        "id":9,
+        "type": "YesOrNo",
+        "content": "Czy zakaz określony tym znakiem obowiązuje Cię do najbliższego skrzyżowania?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/IMG_0524d5org.jpg",
+        "correctAnswer": 1
+    },
+    {
+        "id":10,
+        "type": "YesOrNo",
+        "content": "Czy w tej sytuacji, w przypadku unieruchomienia pojazdu z powodu awarii, masz obowiązek niezwłocznie usunąć go z przejazdu, a jeśli jest to niemożliwe, ostrzec o zagrożeniu kierującego pojazdem szynowym?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/1C119.jpg",
+        "correctAnswer": 1
+    },
+    {
+        "id":11,
+        "type": "MultipleAnswer",
+        "content": "Jak powinien być ustawiony zagłówek?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/2A205.jpg",
+        "answerOne": "Tak, aby jego górna część znajdowała się na wysokości czubka głowy.",
+        "answerTwo": "Tak, aby jego górna część znajdowała się powyżej czubka głowy.",
+        "answerThree": "Tak, aby jego górna część znajdowała się na wysokości szyi.",
+        "correctAnswer": 1
+    },
+    {
+        "id":12,
+        "type": "YesOrNo",
+        "content": "Czy jadąc na wprost masz pierwszeństwo przed pojazdem nadjeżdżającym z kierunku przeciwnego, skręcającym w lewo?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/1A4220.jpg",
+        "correctAnswer": 1
+    },
+    {
+        "id":13,
+        "type": "YesOrNo",
+        "content": "Czy na jezdni oznaczonej tym znakiem pionowym wolno Ci zatrzymać się przy lewej krawędzi?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/IMG_4251orgbm.jpg",
+        "correctAnswer": 2
+    },
+    {
+        "id":14,
+        "type": "YesOrNo",
+        "content": "Czy umieszczona pod tym znakiem zakazu tabliczka określa długość odcinka jezdni, na którym zakaz ten obowiązuje?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/1005D15org.jpg",
+        "correctAnswer": 1
+    },
+    {
+        "id":15,
+        "type": "MultipleAnswer",
+        "content": "W której sytuacji zapięty pas bezpieczeństwa nie będzie działał właściwie?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/B2(27,28,30,31)org.jpg",
+        "answerOne": "Gdy jest on skręcony.",
+        "answerTwo": "Gdy jego górna część jest umieszczona poniżej szyi.",
+        "answerThree": "Gdy jest on napięty.",
+        "correctAnswer": 1
+    },
+    {
+        "id":16,
+        "type": "YesOrNo",
+        "content": "Czy w tej sytuacji, podczas postoju na drodze poza obszarem zabudowanym uszkodzonego pojazdu, masz obowiązek umieścić za nim ostrzegawczy trójkąt odblaskowy w odległości 150 m?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/1C113.jpg",
+        "correctAnswer": 2
+    },
+    {
+        "id":17,
+        "type": "YesOrNo",
+        "content": "Czy ten znak ostrzega, że zbliżasz się do skrzyżowania z drogą z pierwszeństwem przejazdu?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/4_cen_1024x576.jpg",
+        "correctAnswer": 2
+    },
+    {
+        "id":18,
+        "type": "YesOrNo",
+        "content": "Czy jadąc tym pasem ruchu masz prawo zawrócić na najbliższym skrzyżowaniu?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/IMG_0373d5_orgbezmaski.jpg",
+        "correctAnswer": 2
+    },
+    {
+        "id":19,
+        "type": "MultipleAnswer",
+        "content": "Co należy zrobić po stwierdzeniu niewłaściwego ciśnienia oleju silnikowego?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/1803ztPIC.jpg",
+        "answerOne": "Uzupełnić braki dowolnym olejem.",
+        "answerTwo": "Sprawdzić poziom oleju i ewentualnie uzupełnić braki.",
+        "answerThree": "Zawsze włączyć światła awaryjne.",
+        "correctAnswer": 2
+    },
+    {
+        "id":20,
+        "type": "YesOrNo",
+        "content": "Czy zmieniając pas ruchu z lewego na środkowy, miałeś pierwszeństwo przed pojazdem wjeżdżającym na ten pas z prawej strony?",
+        "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/IMG_0846b_org.jpg",
+        "correctAnswer": 2
     }
 ]

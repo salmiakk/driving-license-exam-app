@@ -20,7 +20,7 @@ export function Question(props) {
         <CardMedia
             sx={{ m:2 }}
             component="img"
-            height="140"
+            height="350"
             src={ props.imgSrc }
         />
         <CardActions>
@@ -31,6 +31,7 @@ export function Question(props) {
                 imgSrc={props.imgSrc}
                 correctAnswer={props.correctAnswer}
                 onAnswerGiven={props.onAnswerGiven}
+                workingMode={props.workingMode}
             />
             ) : (
                 <Answers
@@ -42,6 +43,7 @@ export function Question(props) {
                 answerThree={props.answerThree}
                 correctAnswer={props.correctAnswer}
                 onAnswerGiven={props.onAnswerGiven}
+                workingMode={props.workingMode}
             />
             )}
 

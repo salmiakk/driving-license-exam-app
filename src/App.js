@@ -6,6 +6,7 @@ import Footer from './components/Footer.js'
 import Nav from './components/Nav.js'
 import Header from './components/Header.js'
 import HomePage from './components/HomePage.js'
+import UsersPage from './components/UsersPage.js'
 import ExamPage from './components/ExamPage.js'
 import LearnPage from './components/LearnPage.js'
 import EditPage from './components/EditPage.js'
@@ -37,6 +38,7 @@ function App() {
               <Route path="/learn" element={<LearnPage text="Tryb nauki"/>}></Route>
               <Route path="/exam" element={<ExamPage text="Tryb egzaminu"/>}></Route>
               <Route path="/edit" element={<EditPage text="Tryb edycji pytan"/>}></Route>
+              <Route path="/users" element={<UsersPage text="Podgląd użytkowników"/>}></Route>
               <Route path="/" element={<HomePage text="Strona glowna"/>}></Route>
             </Routes>
         <Footer/>
