@@ -32,15 +32,15 @@ export function Answers(props) {
     };
     if(props.type =="YesOrNo"){
         answers = <>
-            <Button color={buttonColors[0]} size="large" onClick={()=> checkAnswer(0)}>TAK</Button>
-            <Button color={buttonColors[1]} size="large" onClick={()=> checkAnswer(1)}>NIE</Button>
+            <Button color={buttonColors[0]} size="large" onClick={()=> checkAnswer(1)}>TAK</Button>
+            <Button color={buttonColors[1]} size="large" onClick={()=> checkAnswer(2)}>NIE</Button>
         </>;
     } else if (props.type == "MultipleAnswer"){
         answers = <>
         <Box sx={{ display: 'grid', gridAuto: '1fr' }}>
-            <Button color={buttonColors[0]} sx={{ m:0.5 }} size="large" onClick={()=> checkAnswer(0)}>{ props.answerOne }</Button>
-            <Button color={buttonColors[1]} sx={{ m:0.5 }} size="large" onClick={()=> checkAnswer(1)}>{ props.answerTwo }</Button>
-            <Button color={buttonColors[2]} sx={{ m:0.5 }} size="large" onClick={()=> checkAnswer(2)}>{ props.answerThree }</Button>
+            <Button color={buttonColors[0]} sx={{ m:0.5 }} size="large" onClick={()=> checkAnswer(1)}>{ props.answerOne }</Button>
+            <Button color={buttonColors[1]} sx={{ m:0.5 }} size="large" onClick={()=> checkAnswer(2)}>{ props.answerTwo }</Button>
+            <Button color={buttonColors[2]} sx={{ m:0.5 }} size="large" onClick={()=> checkAnswer(3)}>{ props.answerThree }</Button>
         </Box>
         </>;
     }

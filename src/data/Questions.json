@@ -7,28 +7,28 @@
         "answerOne": "Od 5:00 do 9:00",
         "answerTwo": "Tylko o 11:35 w soboty",
         "answerThree": "Od 23:00 do 6:00",
-        "correctAnswer": 0
+        "correctAnswer": 1
     },
     {
         "id":2,
         "type": "YesOrNo",
         "content": "Czy w razie unieruchomienia pojazdu na przejeździe kolejowym masz obowiązek ostrzec kierującego pojazdem szynowym, jeżeli nie jest możliwie usunięcie pojazdu z tego przejazdu?",
         "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/Slajd205_cen_1024x576.jpg",
-        "correctAnswer": 0
+        "correctAnswer": 1
     },
     {
         "id":3,
         "type": "YesOrNo",
         "content": "Czy w tej sytuacji, jadąc na wprost, musisz mieć stale włączony lewy kierunkowskaz, ponieważ omijasz zaparkowane pojazdy?",
         "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/3067D15org.jpg",
-        "correctAnswer": 1
+        "correctAnswer": 2
     },
     {
         "id":4,
         "type": "YesOrNo",
         "content": "Czy w przedstawionej sytuacji wolno Ci poruszać się z włączonymi przednimi światłami przeciwmgłowymi?",
         "imgSrc": "https://dacmwwxjyw.cfolks.pl/files/pytania/IMG_7630d8org.jpg",
-        "correctAnswer": 1
+        "correctAnswer": 2
     },
     {
         "id":5,
@@ -38,7 +38,7 @@
         "answerOne": "Nie ma żadnego wpływu",
         "answerTwo": "Tylko podczas wykonywania manewru zawracania.",
         "answerThree": "Ma wpływ na ograniczenie pola widzenia.",
-        "correctAnswer": 2
+        "correctAnswer": 3
     },
     {
         "id":6,
@@ -48,7 +48,7 @@
         "answerOne": "40km/h",
         "answerTwo": "50km/h",
         "answerThree": "60km/h",
-        "correctAnswer": 0
+        "correctAnswer": 1
     },
     {
         "id":7,
@@ -58,6 +58,6 @@
         "answerOne": "Nie",
         "answerTwo": "Tak, ale tylko na tylnim siedzeniu.",
         "answerThree": "Tak, ale pod warunkiem, że ta osoba korzysta z pasów bezpieczeństwa",
-        "correctAnswer": 0
+        "correctAnswer": 1
     }
 ]

@@ -9,16 +9,16 @@ import SaveIcon from '@mui/icons-material/Save';
 import CancelIcon from '@mui/icons-material/Close';
 import QuestionContext from './QuestionContext.js';
 import { EditPageToolbar } from './EditPageToolbar.js'
-export function EditPage(props) {
+
+
+export function EditPage(props) {  
   const { questions, setQuestions } = useContext(QuestionContext);
   const [rowModesModel, setRowModesModel] = useState({});
+  let initialRows = [];
 
-  useEffect(() => {
-    console.log();
-  },[questions]);
   const columns = [
-    { field: 'id', headerName: 'ID', width: 20 },
-    { field: 'type', headerName: 'Typ pytania', width: 100, editable: true },
+    { field: 'id', headerName: 'ID', width: 20, editable: false },
+    { field: 'type', headerName: 'Typ pytania', width: 100, type: 'singleSelect', valueOptions: ['YesOrNo', 'MultipleAnswer'], editable: true},
     { field: 'content', headerName: 'Treść', width: 300, editable: true },
     { field: 'imgSrc', headerName: 'URL zdjęcia', width: 300, editable: true },
     { field: 'answerOne', headerName: 'Pierwsza odpowiedź', width: 250, editable: true },
@@ -73,7 +73,6 @@ export function EditPage(props) {
       },
     },
   ];
-  let initialRows = [];
   questions.map(question => {
     if (question.type == "MultipleAnswer") {
       initialRows.push({
@@ -94,14 +93,13 @@ export function EditPage(props) {
         imgSrc: question.imgSrc,
         answerOne: "TAK",
         answerTwo: "NIE",
-        answerThree: "",
+        answerThree: "-",
         correctAnswer: question.correctAnswer
       }
     )
     }
   })
   const [rows, setRows] = useState(initialRows);
-
 
 
   const handleRowEditStart = (params, event) => {
@@ -149,7 +147,8 @@ export function EditPage(props) {
   return (
     <Box sx={{ height: '80vh' }}>
       <Typography align="center" variant="h6" component="div">
-        W tym trybie możesz edytować pytania egzaminacyjne.
+        W tym trybie możesz edytować pytania egzaminacyjne. Aby edytować konkretne pytanie, wybierz je z listy i kliknij przycisk "edytuj" po prawej stronie. <br/>
+        Następnie wybierz pole którego wartość chcesz zmienić, wprowadź nową zawartość i kliknij przycisk "zapisz" po prawej.
       </Typography>
       <DataGrid
         experimentalFeatures={{ newEditingApi: true }}

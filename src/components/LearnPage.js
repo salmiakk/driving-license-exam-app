@@ -35,6 +35,12 @@ export function LearnPage(props) {
   };
 
   return (
+    <>
+    <Typography variant="h6" component="div" align="center" mb={2} sx={{ flexGrow: 1 }}>
+      Po wybraniu odpowiedzi zostanie ona zaznaczona na zielono - odpowiedź poprawna, lub czerwono - odpowiedź błędna.<br/>
+      Wciśnij przycisk "Losuj kolejne pytanie", aby przejść do następnego pytania. <br/>
+      Aby podsumować wyniki nauki, kliknij "zakończ naukę".
+    </Typography>
     <Box sx={{ bgcolor: '#cfe8fc', height: '80vh' }}>
       <Question
         type={currentQuestion.type} 
@@ -77,6 +83,7 @@ export function LearnPage(props) {
         </DialogActions>
       </Dialog>
     </Box>
+    </>
   );
 }
 export default LearnPage;
