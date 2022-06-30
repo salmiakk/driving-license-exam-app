@@ -5,27 +5,30 @@ import Button from '@mui/material/Button';
 
 export function Answers(props) {
     let answers;
+    let questionAnswered = false;
     let [buttonColors, setButtonColors ] = useState(["primary","primary","primary"]);
-    let [correctAnswerCount, setCorrectAnswerCount] = useState(0);
-    let [wrongAnswerCount, setWrongAnswerCount] = useState(0);
+    let [correctAnswerCount, setCorrectAnswerCount ] = useState(0);
+    let [wrongAnswerCount, setWrongAnswerCount ] = useState(0);
     
     useEffect(() => {
-        //console.log("Correct answer count: ", correctAnswerCount);
-        //setButtonColors(["primary","primary","primary"]);
-    });
+        setButtonColors(["primary","primary","primary"]);
+    }, [props.content]);
+
+    useEffect(() => {
+        props.onAnswerGiven(true, correctAnswerCount, wrongAnswerCount);
+    }, [correctAnswerCount, wrongAnswerCount]);
     
     var checkAnswer = function(answer){
-        if(props.correctAnswer == answer){
+        if(questionAnswered == false && props.correctAnswer == answer){
             setCorrectAnswerCount(correctAnswerCount+1);
-        }else{
+        }else if (questionAnswered == false && props.correctAnswer !== answer){
             setWrongAnswerCount(wrongAnswerCount+1);
         }
         setButtonColors(() => {
             let newState = ["error", "error", "error"];
             newState[props.correctAnswer] = "success";
             return newState;
-        });     
-        props.onAnswerGiven(true);
+        });
     };
     if(props.type =="YesOrNo"){
         answers = <>

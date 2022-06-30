@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React from "react";
+import {React, useState} from "react";
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Footer from './components/Footer.js'
 import Nav from './components/Nav.js'
@@ -11,6 +11,7 @@ import LearnPage from './components/LearnPage.js'
 import EditPage from './components/EditPage.js'
 import Container from '@mui/material/Container';
 import Questions from './data/Questions.json'
+import QuestionContext from './components/QuestionContext.js';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -18,9 +19,16 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 function App() {
-  localStorage.setItem('questions', JSON.stringify(Questions));
+  localStorage.setItem('questions',JSON.stringify(Questions) );
+  
+  const [questions, setQuestions] = useState(() => {
+    const saved = localStorage.getItem("questions");
+    const initialValue = JSON.parse(saved);
+    return initialValue || "";
+  });
 
   return (
+    <QuestionContext.Provider value={{ questions, setQuestions }}>
     <Router>
       <Container maxWidth="100%" style={{ padding: 0}}>
         <Header/>
@@ -34,6 +42,7 @@ function App() {
         <Footer/>
       </Container>
     </Router>
+    </QuestionContext.Provider>
   );
 }
 

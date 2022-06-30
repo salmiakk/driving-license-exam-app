@@ -1,17 +1,15 @@
-import { React, useState} from "react";
+import { React, useState, useContext} from "react";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import QuestionContext from './QuestionContext.js';
+import '../helpers/array.js'
 
 export function ExamPage(props) {
-
-  const [questions, setQuestions] = useState(() => {
-    const saved = localStorage.getItem("questions");
-    const initialValue = JSON.parse(saved);
-    return initialValue || "";
-  });
   
+  const questions = useContext(QuestionContext).questions;
+
   return (
-    <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} >
+    <Box sx={{ bgcolor: '#cfe8fc', height: '80vh' }} >
       {questions.map(name => (
         <li>  
         {name.type}  
