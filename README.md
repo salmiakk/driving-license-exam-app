@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Driving License Exam app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application allows you to test yourself before taking the Polish Driving License Exam - theory part.
+Choose between learning mode and exam mode, and make sure you are well prepared before the big day!
 
 ## Available Scripts
 
